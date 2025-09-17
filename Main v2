@@ -1,0 +1,83 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Window = Library.CreateLib("You_iopki's scripts. Town", "RJTheme6")
+local Tab = Window:NewTab("Игрок")
+local Seclocal Section = Tab:NewSection("Флай, флинг")
+
+Section:NewButton("Флай", "y - невидемость, t - флай", function()
+
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/latest.lua'))() end)
+
+end)
+
+Section:NewButton("Флай, не убивайма пчела", "v - флай, h - не убиваймая пчела", function()
+
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/unkillable_bee.lua'))() end)
+
+end)
+
+Section:NewButton("Флинг", "g - флинг", function()
+
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/fling_v1.5.lua'))() end)
+
+end)
+
+Section:NewButton("Вехекле Флай", "n - флай, m - невидемость", function()
+
+pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/lilmond/roblox_fly_script/refs/heads/main/v4.2.2.6_vehicle.lua'))() end)
+  
+end)
+
+local Seclocal Section = Tab:NewSection("Скрорость, Гравитация")
+
+Section:NewSlider("Скорость", "Нету!!!!", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("Гравитация", "Нету!!!!", 1000, 1, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.Gravity = s
+end)
+
+local Tab = Window:NewTab("Аимбот")
+
+local Seclocal Section = Tab:NewSection("Аимбот")
+
+Section:NewButton("Аимбот", "!!Не используйте вместе с флаем!!", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()()
+
+end)
+
+local Tab = Window:NewTab("Esp")
+
+local Seclocal Section = Tab:NewSection("Esp")
+
+Section:NewButton("Esp", "Нету!!!", function()
+
+  loadstring(game:HttpGet("https://pastebin.com/raw/zBEsayut"))()
+  
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Yahahahau/Ultimate-Esp-v1/refs/heads/main/Ultimate%20esp%20v1.lua"))()
+  
+end)
+
+
+local Tab = Window:NewTab("Доп. скрипты")
+
+local Seclocal Section = Tab:NewSection("Скрипты:")
+
+Section:NewButton("infinity yield", "это доп к скрипту", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+Section:NewButton("Delta keyboard", "Nety!!!", function()
+
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-delta-keyboard-crack-reupload-20074"))()
+
+end)
+
+Section:NewButton("Keyboard V2", "Nety!!!", function()
+
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
+
+end)
